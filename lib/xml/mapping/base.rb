@@ -195,7 +195,7 @@ module XML
     def pre_load(xml, options={:mapping=>:_default})
     end
 
-    
+
     # This method is called immediately after _self_ has been filled
     # from an xml source. If you have things to do after the object
     # has been succefully loaded from the xml (reorganising the loaded
@@ -279,6 +279,7 @@ module XML
       # (i.e. immediately after XML::Mapping was included in it)
       def initializing_xml_mapping  #:nodoc:
         @default_mapping = :_default
+        xml_mapping_nodes_hash[:_default] ||= []  # create empty mapping node list if
       end
 
       # Make _mapping_ the mapping to be used by default in future
