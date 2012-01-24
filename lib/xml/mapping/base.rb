@@ -16,17 +16,9 @@ module XML
   #
   # == Example
   #
-  # === Input document:
   #
-  #   :include: company.xml
   #
-  # === mapping class declaration:
   #
-  #   :include: company.rb
-  #
-  # === usage:
-  #
-  #   :include: company_usage.intout
   #
   # So you have to include XML::Mapping into your class to turn it
   # into a "mapping class", that is, to add XML mapping capabilities
